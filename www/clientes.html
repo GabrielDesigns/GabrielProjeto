@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/ler_clientes.js"></script>
+    <title>Clientes</title>
+</head>
+
+<body>
+
+    
+    <div data-role="page" id="clientes">
+        <div data-role="header">
+            <h1>Clientes</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Listagem de clientes:</p>
+            <ul data-role="listview" id="lista-clientes"></ul>
+            <a href="cadastro.html" class="ui-btn ui-corner-all ui-shadow">Novo Cliente</a>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).on('pageinit', '#clientes', function() {
+            lerClientes();
+        });
+    </script>
+
+</body>
+
+</html>

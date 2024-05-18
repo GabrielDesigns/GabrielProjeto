@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/cadastro_cliente.js"></script>
+    <title>Cadastro de Cliente</title>
+</head>
+
+<body>
+
+    
+    <div data-role="page" id="cadastro">
+        <div data-role="header">
+            <h1>Cadastro de Cliente</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular">
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento">
+            <label for="cep">Cep:</label>
+            <input type="text" id="cep">
+            <button id="botao" class="ui-btn ui-corner-all ui-shadow">Consultar</button>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco">
+            <label for="numero">Numero:</label>
+            <input type="text" id="numero">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado">
+            <button onclick="enviar()" class="ui-btn ui-corner-all ui-shadow">Cadastrar</button>
+            <a href="clientes.html" class="ui-btn ui-corner-all ui-shadow">Voltar</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
